@@ -1,4 +1,4 @@
-# crypto-cli
+# crypto-cli-v.1.0.3
 
 A simple and fast command-line interface (CLI) tool written in C for fetching cryptocurrency prices and information from the CoinGecko API.
 
