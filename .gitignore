@@ -1,0 +1,24 @@
+# Build artifacts
+obj/
+bin/
+*.o
+*.a
+*.so
+*.exe
+crypto
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Debug
+*.dSYM/
+vgcore.*
+
