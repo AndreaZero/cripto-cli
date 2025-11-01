@@ -197,5 +197,6 @@ Contributions are welcome! Please feel free to submit issues or pull requests.
 
 ## Author
 
+Vibe Coded by AndreaZero in Cursor Composer 1.
 Created as an open-source project for cryptocurrency price tracking.
 
