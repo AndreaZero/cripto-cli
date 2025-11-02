@@ -1,62 +1,62 @@
 # Installation Guide
 
-## Installazione Globale del Comando `crypto`
+## Global Installation of the `crypto` Command
 
-Per rendere il comando `crypto` eseguibile da qualsiasi directory del terminale, hai diverse opzioni:
+To make the `crypto` command executable from any terminal directory, you have several options:
 
-### Opzione 1: Installazione con Make (Consigliata)
+### Option 1: Installation with Make (Recommended)
 
-Questa è la soluzione più semplice e pulita:
+This is the simplest and cleanest solution:
 
 ```bash
 make
 sudo make install
 ```
 
-Questo comando copierà l'eseguibile in `/usr/local/bin/crypto`, rendendolo disponibile globalmente.
+This command will copy the executable to `/usr/local/bin/crypto`, making it available globally.
 
-Per disinstallare:
+To uninstall:
 ```bash
 sudo make uninstall
 ```
 
-### Opzione 2: Aggiungere bin/ al PATH
+### Option 2: Add bin/ to PATH
 
-Se preferisci non installare globalmente, puoi aggiungere la directory `bin/` al tuo PATH:
+If you prefer not to install globally, you can add the `bin/` directory to your PATH:
 
-**Per Bash/Zsh:**
-Aggiungi questa riga al tuo `~/.bashrc` o `~/.zshrc`:
+**For Bash/Zsh:**
+Add this line to your `~/.bashrc` or `~/.zshrc`:
 ```bash
-export PATH="$PATH:/percorso/completo/a/crypto-cli/bin"
+export PATH="$PATH:/full/path/to/crypto-cli/bin"
 ```
 
-Poi ricarica la shell:
+Then reload the shell:
 ```bash
-source ~/.bashrc  # o source ~/.zshrc
+source ~/.bashrc  # or source ~/.zshrc
 ```
 
-**Per Fish:**
-Aggiungi questa riga al tuo `~/.config/fish/config.fish`:
+**For Fish:**
+Add this line to your `~/.config/fish/config.fish`:
 ```fish
-set -gx PATH $PATH /percorso/completo/a/crypto-cli/bin
+set -gx PATH $PATH /full/path/to/crypto-cli/bin
 ```
 
-### Opzione 3: Creare un Alias
+### Option 3: Create an Alias
 
-Aggiungi un alias al tuo `~/.bashrc` o `~/.zshrc`:
+Add an alias to your `~/.bashrc` or `~/.zshrc`:
 
 ```bash
-alias crypto='/percorso/completo/a/crypto-cli/bin/crypto'
+alias crypto='/full/path/to/crypto-cli/bin/crypto'
 ```
 
-Poi ricarica la shell:
+Then reload the shell:
 ```bash
-source ~/.bashrc  # o source ~/.zshrc
+source ~/.bashrc  # or source ~/.zshrc
 ```
 
-## Verifica Installazione
+## Verify Installation
 
-Dopo l'installazione, verifica che funzioni:
+After installation, verify that it works:
 
 ```bash
 which crypto
@@ -64,9 +64,8 @@ crypto --version
 crypto btc
 ```
 
-Se vedi il path e il comando funziona, l'installazione è riuscita!
+If you see the path and the command works, the installation was successful!
 
-## Nota per Windows (WSL)
+## Note for Windows (WSL)
 
-Su WSL, l'installazione con `make install` funziona esattamente come su Linux. Se usi PowerShell di Windows, potresti dover aggiungere il percorso manualmente al PATH di Windows.
-
+On WSL, installation with `make install` works exactly the same as on Linux. If you use Windows PowerShell, you may need to manually add the path to Windows PATH.
